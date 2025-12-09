@@ -84,6 +84,6 @@ resource "null_resource" "grafana_provisioner" {
     interpreter = ["wsl", "bash", "-c"] 
 
     # The Ansible command using the aws_hosts file and your private key
-    command = "ANSIBLE_CONFIG=./ansible.cfg ansible-playbook --private-key ${local.windows_key_path} playbooks/grafana.yml"
+    command = "ANSIBLE_CONFIG=./ansible.cfg ansible-playbook --private-key ${var.private_key_path} playbooks/grafana.yml"
   }
 }
