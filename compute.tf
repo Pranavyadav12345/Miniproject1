@@ -16,7 +16,7 @@ resource "random_id" "random_node_id" {
 
 resource "aws_key_pair" "deployer_key" {
   key_name   = var.key_name
-  public_key = var.aws_pub_key_content
+  public_key = file("id_rsa_project_demo.pub")
 }
 
 resource "aws_instance" "web_server" {

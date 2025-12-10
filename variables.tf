@@ -27,15 +27,3 @@ variable "key_name" {
   type        = string
   default     = "deployer-key"
 }
-
-variable "aws_pub_key_content" {
-  description = "The raw string content of the public key."
-  type        = string
-  # No default needed, as it will be provided by Jenkins
-}
-
-variable "aws_prv_key_content" {
-  description = "The raw string content of the private key."
-  type        = string
-  # No default needed, as it will be provided by Jenkins
-}
