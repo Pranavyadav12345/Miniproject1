@@ -35,7 +35,7 @@ resource "aws_instance" "web_server" {
 #   # Change the path below to match your Git installation location
 #   #interpreter = ["C:\\Program Files\\Git\\bin\\bash.exe", "-c"]
   
-#   # Your Bash command
+#   # Your Bash command 
 #   command     = "printf '\\n${self.public_ip}' >> aws_hosts"
 # }
 
