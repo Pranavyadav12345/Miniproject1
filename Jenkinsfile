@@ -42,7 +42,7 @@ pipeline {
                 
                 // --- This is the simple, powerful AWS CLI command ---
                 // It polls AWS until status checks pass or it hits the default timeout (usually 15 minutes)
-                sh "aws ec2 wait instance-status-ok --instance-ids ${env.INSTANCE_ID} --region us-west-1" 
+                sh "aws ec2 wait instance-status-ok --instance-ids ${env.INSTANCE_ID} --region us-east-2" 
                 
                 echo 'AWS instance health checks passed. Proceeding to Ansible.'
             }
