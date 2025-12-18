@@ -5,7 +5,7 @@ pipeline {
         TF_IN_AUTOMATION = 'true'
         TF_CLI_ARGS = '-no-color'
         SSH_CRED_ID = 'aws-deployer-ssh-key' 
-        TF_CLI_CONFIG_FILE = credentials('aws-creds')
+        TF_CLI_CONFIG_FILE = credentials('AWS_pranav')
     }
 
     stages {
