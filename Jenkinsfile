@@ -70,7 +70,7 @@ pipeline {
         stage('Validate Ansible') {
             
             input {
-                message "Do you want to run Ansible?"
+                message "Do you want to run Anssible?"
                 ok "Run Ansible"
             }
             steps {
