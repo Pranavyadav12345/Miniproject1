@@ -11,7 +11,7 @@ terraform {
   }
 
   backend "s3" {
-    bucket       = "devops-automation-project-demo-111223344-utkarsh"
+    bucket       = "devops-automation-project-11122334-pranav"
     key          = "terraform.tfstate"
     region       = "us-east-2"
     use_lockfile = true
