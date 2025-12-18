@@ -9,7 +9,7 @@ pipeline {
     }
 
     stages {
-        stage('Terraform Initialization ') {
+        stage('Terraform Initialization') {
             steps {
                 sh 'terraform init'
                 sh "cat ${env.BRANCH_NAME}.tfvars"
